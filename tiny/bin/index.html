@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yijie Li--iWatch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/site.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src='javascript/slidetounlock.js'></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+              setInterval( function() {
+              var seconds = new Date().getSeconds();
+              var sdegree = seconds * 6;
+              var srotate = "rotate(" + sdegree + "deg)";
+
+              $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
+
+              }, 1000 );
+
+
+              setInterval( function() {
+              var hours = new Date().getHours();
+              var mins = new Date().getMinutes();
+              var hdegree = hours * 30 + (mins / 2);
+              var hrotate = "rotate(" + hdegree + "deg)";
+
+              $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+
+              }, 1000 );
+
+
+              setInterval( function() {
+              var mins = new Date().getMinutes();
+              var mdegree = mins * 6;
+              var mrotate = "rotate(" + mdegree + "deg)";
+
+              $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
+
+              }, 1000 );
+
+
+
+        });
+
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Yijie Li</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active navbar-manue"><a href="index.html"> Home </a></li>
+            <li class="navbar-manue"><a href="projects.html"> Projects </a></li>
+            <li class="navbar-manue"><a href="about.html"> About me </a></li>
+            <li class="navbar-manue-last"><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="clock-center">
+          <ul id="clock">
+            <li id="sec"></li>
+            <li id="hour"></li>
+            <li id="min"></li>
+          </ul>
+
+          <div id="well">
+            <div class="unlock-content"><strong id="slider"></strong> <span>Slide to unlock</span></div>
+          </div>
+
+          <div class="clock-menu-lists">
+
+            <div class="ch-grid-top-first">
+                <ul class="ch-grid">
+                <li>
+                  <a href="index.html" target="_blank">
+                  <div class="ch-item ch-img-home">
+                    <div class="ch-info">
+                      <div class="ch-content">Home</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.google.ca/maps/place/Montreal,+QC/@45.5001301,-73.5841161,13.15z/data=!4m5!3m4!1s0x4cc91a541c64b70d:0x654e3138211fefef!8m2!3d45.5016889!4d-73.567256" target="_blank">
+                  <div class="ch-item ch-img-googlemap">
+                    <div class="ch-info">
+                      <div class="ch-content">Google Map</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+
+                </ul>
+              </div>
+
+            <div class="ch-grid-top">
+                <ul class="ch-grid">
+                <li>
+                  <a href="http://www.github.com/MrLi2007" target="_blank">
+                  <div class="ch-item ch-img-github">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">GitHub</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/yijie-li" target="_blank">
+                  <div class="ch-item ch-img-linkedin">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">Linkedin</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/liyijie2007" target="_blank">
+                  <div class="ch-item ch-img-twitter">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">Twitter</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                </ul>
+              </div>
+
+            <div class="ch-grid-middle">
+                <ul class="ch-grid">
+                <li>
+                  <a href="http://bit.ly/2skrLFW" target="_blank">
+                  <div class="ch-item ch-img-facebook">
+                    <div class="ch-info">
+                      <div class="ch-content">facebook</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:liyijie2007@gmail.com?subject=Hello Jason" target="_blank">
+                  <div class="ch-item ch-img-email">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">Email</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="skype:jasonli?call" target="_blank">
+                  <div class="ch-item ch-img-phone">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">Phone (Skype)</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="skype:jasonli?chat" target="_blank">
+                  <div class="ch-item ch-img-skype">
+                    <div class="ch-info">
+                      <div class="ch-content-sm">Skype Chat</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                </ul>
+              </div>
+
+            <div class="ch-grid-bottom">
+                <ul class="ch-grid">
+
+                <li>
+                  <a href="Resume-YIJIE LI.pdf" target="_blank">
+                  <div class="ch-item ch-img-resume">
+                    <div class="ch-info">
+                      <div class="ch-content-md">Resume</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+
+
+                <li>
+                  <a href="projects.html" target="_blank">
+                  <div class="ch-item ch-img-projects">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">Projects</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+
+
+
+                <li>
+                  <a href="about.html" target="_blank">
+                  <div class="ch-item ch-img-aboutme">
+                    <div class="ch-info">
+                      <div class="ch-content-lg">About</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                </ul>
+              </div>
+
+            <div class="ch-grid-bottom-last">
+                <ul class="ch-grid">
+
+                <li>
+                  <a href="contact.html" target="_blank">
+                  <div class="ch-item ch-img-contactme">
+                    <div class="ch-info">
+                      <div class="ch-content-sm">Contact</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/+YijieLi17" target="_blank">
+                  <div class="ch-item ch-img-Google">
+                    <div class="ch-info">
+                      <div class="ch-content-sm">Google</div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <footer>
+        <div class="center">
+          <hr>
+          <p class="text-center">© Copyright 2015 Wei Han</p>
+      </div>
+    </footer>
+
+
+    <script src="javascript/bootstrap.min.js"></script>
+  </body>
+</html>
